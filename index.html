@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickfy | Login &mdash; Attendance</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/queries.css">
+</head>
+<body>
+  <header class="header">
+      <a href="#">
+        <img class="logo" src="https://app.clockify.me/assets/logo.svg" alt="Omnifood logo"></a>
+        <p class="header-text">Don't have an account? <a class="signupButton" href="/signup.html">Sign up</a></p>
+    </header>
+
+    <main>
+        <p id="wish-time"></p>
+
+      <section class="section-pricing" id="pricing">
+
+        <form id="loginForm" onsubmit ="return login()">
+
+        <div class="container">
+          <div class="pricing-plan pricing-plan--starter">
+            <p class="plan-name">Login</p>
+            <p id="error" class="error-msg"></p>
+
+            <div class="input-box">
+              <label for="email"></label>
+              <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
+
+            </div>
+            <div class="input-box">
+              <label for="password"></label>
+              <input id="password" type="password" placeholder="Enter password" name="password" required="" class="input">
+              </div>
+
+              <div class="stay-login">
+                <input id="checkbox" type="checkbox" name="checkbox" class="checkbox-stay">
+                <div class="stay">
+
+                <label for="checkbox" class="label-stay-log">Stay logged in</label>
+
+                
+                
+                <div class="forgot-password"><a href="#"><span class="forgot-password">Forgot password?</span></a></div>
+              
+              </div>
+              
+            </div>
+            <button type="submit" class="btn">Log in</button>
+           
+            <p id="currentIP"></p>
+            <p id="usernameDisplay"></p>
+
+          </div>
+          </div>
+        </form>
+
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>

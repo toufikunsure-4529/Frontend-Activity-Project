@@ -1,0 +1,58 @@
+@media (max-width:44em){
+  .pricing-plan--starter{
+
+    padding: 3.6rem 5.8rem;
+  
+  
+  }
+}
+@media (max-width:39em){
+  .pricing-plan--starter{
+
+    padding: 3.6rem 2.8rem;
+  
+  
+  }
+}
+
+@media (max-width:36em){
+  .input {
+    padding: 1.2rem 4rem;
+}
+
+.pricing-plan--starter{
+
+  padding: 3.6rem -5.2rem;
+
+
+}
+  }
+
+  @media (max-width:28em){
+    .input {
+      padding: 1.2rem 0.5rem;
+  }
+  .container{
+    /* 1140px also use */
+    max-width: 75rem;
+    padding: 0 1px;
+    /* margin: 0 auto; */
+  }
+  
+  }
+
+  @media (max-width:21em){
+    
+.container{
+  /* 1140px also use */
+  max-width: 75rem;
+  padding: 0 1px;
+  /* margin: 0 auto; */
+}
+
+  }
+
+  
+
+
+
