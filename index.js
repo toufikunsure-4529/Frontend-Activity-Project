@@ -3,7 +3,7 @@
 function login() {
   var errorElement = document.getElementById("error");
   var password = document.getElementById("password").value;
-  var correctPassword = "Password@123";
+  var correctPassword = "Password@1234";
   if(password === correctPassword) {
         // window.location.href = "home.html";
       var url = "home.html?message=success";
