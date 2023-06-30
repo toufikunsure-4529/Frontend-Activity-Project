@@ -8,9 +8,7 @@
 }
 @media (max-width:39em){
   .pricing-plan--starter{
-
-    padding: 3.6rem 2.8rem;
-  
+padding: 3.6rem 2.8rem;
   
   }
 }
@@ -21,10 +19,7 @@
 }
 
 .pricing-plan--starter{
-
-  padding: 3.6rem -5.2rem;
-
-
+padding: 3.6rem -5.2rem;
 }
   }
 
@@ -51,8 +46,3 @@
 }
 
   }
-
-  
-
-
-
