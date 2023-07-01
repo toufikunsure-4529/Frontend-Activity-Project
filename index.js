@@ -18,7 +18,6 @@ else {
 }
 }
 
-
 let day=new Date();
 let hr=day.getHours();
 if(hr>=0 && hr<12){
@@ -36,7 +35,6 @@ else{
  document.getElementById('wish-time').innerHTML="Good Evening!";
 
 }  
-
 
 document.addEventListener("DOMContentLoaded", function() {
   var currentIPEl = document.getElementById("currentIP");

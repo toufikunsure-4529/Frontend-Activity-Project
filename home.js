@@ -17,8 +17,6 @@ else{
 }  
 
 
-
-
 // Get the URL parameters
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString,window.location.search);
