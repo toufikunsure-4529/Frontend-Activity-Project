@@ -116,10 +116,13 @@ label{
   font-size: 1.6rem;
   text-align: left;
   margin-left: 0;
+  opacity: 0.8;
+
 }
 .input{
-  padding: 1.2rem ;
-  padding-right: 15rem;
+  padding:1.4rem;
+  box-sizing: content-box;
+  width: 90%;
 }
 
 .forgot-password a{
