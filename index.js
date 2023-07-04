@@ -69,3 +69,4 @@ function copyUsername() {
   // Redirect to the next page with the username as a parameter
   window.location.href = "next-page.html?username=" + encodedUsername;
 }
+

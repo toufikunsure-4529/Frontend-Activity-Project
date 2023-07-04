@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Upload Preview</title>
+  <style>
+    #preview {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Upload</h1>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <div id="preview"></div>
+  
+  <div id="message" style="display: none;"></div>
+
+  <script>
+    const uploadForm = document.getElementById('uploadForm');
+const imageInput = document.getElementById('imageInput');
+const preview = document.getElementById('preview');
+const message = document.getElementById('message');
+
+uploadForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const file = imageInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const image = document.createElement('img');
+      image.src = reader.result;
+      image.style.maxWidth = '100%';
+      preview.innerHTML = '';
+      preview.appendChild(image);
+      showMessage('Image uploaded successfully!');
+    }
+    reader.readAsDataURL(file);
+  }
+});
+
+function showMessage(msg) {
+  message.innerHTML = msg;
+  message.style.display = 'block';
+}
+
+  </script>
+</body>
+</html>
