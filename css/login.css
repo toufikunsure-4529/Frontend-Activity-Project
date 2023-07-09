@@ -49,18 +49,22 @@ body{
   max-width: 75rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  
 }
 
 .section-pricing{
-  padding: 9.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .pricing-plan{
   border-radius: 11px;
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  margin: 2rem;
 }
 
 
@@ -70,6 +74,7 @@ body{
   padding: 4.6rem 9.2rem;
   background-color: #fff;
   box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.35);
+ 
 
 }
 
@@ -151,7 +156,7 @@ button{
   font-family: sans-serif;
   font-size: 3.2rem;
   font-weight: 400;
-  color: #cf711f;
+  color: green;
   margin-top: 0.8rem;
 }
 
@@ -184,12 +189,12 @@ button{
   margin: auto;
   padding: 0.8rem;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: black;
 }
 
 .footer-bar a{
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 

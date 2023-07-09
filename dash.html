@@ -2,66 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Stats|Dashboard</title>
-  <link rel="stylesheet" href="/css/signup.css">
-  <link rel="stylesheet" href="/css/queries.css">
+  <title>Live Stats | Dashboard</title>
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/dash.css">
 
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+  <header class="header">
+    <nav class="nav">
+    <div class="nav-section">
+      <div>
+        <ion-icon class="menu-icon" name="menu-outline"></ion-icon> 
+      </div>
+
+      <div>
+        <img src="https://app.clockify.me/assets/logo.svg" alt="Clockify Image">
+      </div>
+      <div class="nav-detail">
+
+      <div>
+        <p class="user-name">Welcome</p>
+      </div>
+
+      <div>
+        <button class="btn-upgrade">Upgrade</button>
+      </div>
+
+      <div>
+        <ion-icon class="circle-question-icon" name="help-circle-outline"></ion-icon>
+      </div>
+
+      <div>
+            <ion-icon class="notification-icon" name="notifications-outline"></ion-icon>
+      </div>
+
+      <div>
+      <img src="https://omnifood-toufik.netlify.app/img/customers/customer-4.jpg" alt="User Profile Photo" class="profile-img">
+      </div>
+    </div>
+    <div>
+    </nav>
+
+  </header>
+
   <main>
-  <section class="section-pricing" id="pricing">
+    <div class="menu-section">
+    <section class="section-menu">
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="aperture-outline"></ion-icon><span>Attendance</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="calendar-outline"></ion-icon><span>TimeSheet</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="time-outline"></ion-icon> <span>Time Tracker</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="calendar-clear-outline"></ion-icon><span>Calendar</span></a></div>
+      <div class="menu"><a class="main-menu" href="/dash.html"><ion-icon class="icon-menu-section" name="grid-outline"></ion-icon><span>Dashboard</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="stats-chart-outline"></ion-icon><span>Reports</span></a></div>
+      <div class="menu"><a class="main-menu" href="/team.html"><ion-icon class="icon-menu-section" name="people-circle-outline"></ion-icon><span>Team</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="person-circle-outline"></ion-icon><span>Clients</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="document-text-outline"></ion-icon><span>Projects</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="git-branch-outline"></ion-icon><span>Schedule</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="analytics-outline"></ion-icon><span>Activity</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="calendar-outline"></ion-icon><span>Approvel</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="document-outline"></ion-icon><span>Invoice</span></a></div>
+      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="settings-outline"></ion-icon><span>Settings</span></a></div>
+      <div class="menu"><a class="main-menu" href="/index.html"><ion-icon class="icon-menu-section" name="log-out-outline"></ion-icon><span>Logout</span></a></div>
+      
+    </section>
+    <div class="box-section">
+<section class="section-dash">
+  <div class="container one">
+    <p class="container-txt">Our Team</p>
+    <p class="member-txt">95</p>
+  <button class="btn">View & Download</button>
+  </div>
+</section>
+<section class="section-dash">
+  <div class="container two">
+    <p class="container-txt">Our Team</p>
+    <p class="member-txt">95</p>
+  <button class="btn">View & Download</button>
+  </div>
+</section>
+<section class="section-dash">
+  <div class="container three">
+    <p class="container-txt">Our Team</p>
+    <p class="member-txt">950</p>
+  <button class="btn">View & Download</button>
+  </div>
+  
+</section>
+<section class="section-dash">
+  <div class="container four">
+    <p class="container-txt">Our Team</p>
+    <p class="member-txt">95</p>
+  <button class="btn">View & Download</button>
+  </div>
 
-    <form name="loginForm" netlify>
+</div>
 
-    <div class="container">
-      <div class="pricing-plan pricing-plan--starter">
-        <div class="display-signup">
-        <h1 class="logo-txt"><span>C</span>lick<span>f</span>y</h1>
-
-        <p class="plan-name">Sign <span>Up</span> Now</p>
-      </div>
-
-        <div class="input-box">
-          <label for="name"></label>
-          <input id="name" type="text" placeholder="Enter Your Name" name="name" required="" class="input">
-        </div>
-        <div class="input-box">
-          <label for="mobile-no"></label>
-          <input id="mobile-no" type="number" placeholder="Enter Phone No" name="mobile" required="" class="input">
-        </div>
-   
-          <div class="input-box">
-            <label for="email"></label>
-            <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
-          </div>
-
-         
-        <button type="submit" class="btn">Sign Up</button>
+  </main>
+  <script src="team.js"></script>
  
-      </div>
-      </div>
-    </form>
-    <br><br>
-    <marquee>1: Submit your details to sign up. We will send your username and password to your email within 24-48 hours.</marquee>
-       
-  </section>
-
-  <section class="section-pricing main" id="pricing">
-
-    <form name="loginForm" netlify>
-
-    <div class="container">
-      <div class="pricing-plan pricing-plan--starter">
-        <img class="new-gif" src="/img/new.gif" alt="New">
-        <h1 class="logo-txt"><span>Notice:-</span></h1>
-
-
-        <p class="notice logo-txt"><strong><span>1:</span></strong> 
-          Submit your details to sign up. We will send your username and password to your email within 24-48 hours...if Not Recived Email Please Contact System Admin-<span>toufiksk.ab3@gmail.com</span> </p>
-    </form>
-
-  </section>
-</main>
-</body>
+  </body>
 </html>
