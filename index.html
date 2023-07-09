@@ -15,7 +15,7 @@
   <script>
     window.addEventListener("DOMContentLoaded", function() {
       var now = new Date();
-      var scheduledTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 16, 0, 0); // Set the scheduled time to 2:00 PM
+      var scheduledTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0); // Set the scheduled time to 2:00 PM
 
       if (now >= scheduledTime) {
         document.getElementById("maintenanceMessage").style.display = "block";
