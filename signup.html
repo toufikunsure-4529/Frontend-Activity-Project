@@ -1,67 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SignUp</title>
-  <link rel="stylesheet" href="/css/signup.css">
-  <link rel="stylesheet" href="/css/queries.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/queries.css">
+  </head>
+  <body>
+    <main>
 
-</head>
-<body>
-  <main>
-  <section class="section-pricing" id="pricing">
+      <section class="section-pricing" id="pricing">
+        <div class="container">
 
-    <form name="loginForm" netlify>
+          <form name="loginForm" netlify>
+            <div class="pricing-plan pricing-plan--starter">
+              <div class="display-signup">
+                <h1 class="logo-txt"><span>C</span>lick<span>f</span>y</h1>
+                <p class="plan-name">Sign <span>Up</span> Now</p>
+              </div>
 
-    <div class="container">
-      <div class="pricing-plan pricing-plan--starter">
-        <div class="display-signup">
-        <h1 class="logo-txt"><span>C</span>lick<span>f</span>y</h1>
+              <div class="input-box">
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="Enter Your Name"
+                  name="name" required class="input">
+              </div>
+              <div class="input-box">
+                <label for="mobile-no"></label>
+                <input id="mobile-no" type="number" placeholder="Enter Phone No"
+                  name="mobile" required class="input">
+              </div>
 
-        <p class="plan-name">Sign <span>Up</span> Now</p>
-      </div>
+              <div class="input-box">
+                <label for="email"></label>
+                <input id="usernameInput" type="email" placeholder="Enter email"
+                  name="email" required class="input">
+              </div>
 
-        <div class="input-box">
-          <label for="name"></label>
-          <input id="name" type="text" placeholder="Enter Your Name" name="name" required="" class="input">
-        </div>
-        <div class="input-box">
-          <label for="mobile-no"></label>
-          <input id="mobile-no" type="number" placeholder="Enter Phone No" name="mobile" required="" class="input">
-        </div>
-   
-          <div class="input-box">
-            <label for="email"></label>
-            <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
+              <button type="submit" class="btn">Sign Up</button>
+              <a href="/index.html" class="alrady-user">Alrady Register</a>
+            </div>
           </div>
-
-         
-        <button type="submit" class="btn">Sign Up</button>
- 
-      </div>
-      </div>
-    </form>
-    <br><br>
-    <marquee>1: Submit your details to sign up. We will send your username and password to your email within 24-48 hours.</marquee>
-       
-  </section>
-
-  <section class="section-pricing main" id="pricing">
-
-    <form name="loginForm" netlify>
-
-    <div class="container">
-      <div class="pricing-plan pricing-plan--starter">
-        <img class="new-gif" src="/img/new.gif" alt="New">
-        <h1 class="logo-txt"><span>Notice:-</span></h1>
-
-
-        <p class="notice logo-txt"><strong><span>1:</span></strong> 
-          Submit your details to sign up. We will send your username and password to your email within 24-48 hours...if Not Recived Email Please Contact System Admin-<span>toufiksk.ab3@gmail.com</span> </p>
-    </form>
-
-  </section>
-</main>
-</body>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

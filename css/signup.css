@@ -43,8 +43,8 @@ body{
 
 .container{
   /* 1140px also use */
-  max-width: 75rem;
-  padding: 0 3.2rem;
+  max-width: 75em;
+  padding: 0 1.6rem;
   margin: 0 auto;
 }
 
@@ -54,7 +54,6 @@ body{
 }
 .pricing-plan{
   border-radius: 11px;
-  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -196,4 +195,8 @@ label{
 
 marquee{
   font-size: 2.2rem;
+}
+
+.alrady-user{
+  font-size: 1.2rem;
 }
