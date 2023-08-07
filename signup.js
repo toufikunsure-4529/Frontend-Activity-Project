@@ -1,5 +1,5 @@
-let name = document.getElementById('#name')
-let usernameInput = document.getElementById("#usernameInput")
+let name = document.getElementById('name')
+let usernameInput = document.getElementById("usernameInput")
 let btn = document.querySelector('button')
 btn.addEventListener("click", showMsg)
 let pw = "Password@123"
