@@ -43,8 +43,8 @@ body{
 
 .container{
   /* 1140px also use */
-  max-width: 75em;
-  padding: 0 1.6rem;
+  max-width: 500px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 
@@ -116,13 +116,13 @@ label{
   text-align: left;
   margin-left: 0;
   opacity: 0.8;
-
 }
 .input{
-  padding:1.4rem;
+  padding:1.2rem;
   box-sizing: content-box;
   width: 90%;
 }
+
 
 .forgot-password a{
   font-size: 1.6rem;
@@ -136,12 +136,18 @@ label{
 }
 
 .btn{
-  padding: 1.4rem 0;
+  padding: 1.4rem 0 !important;
   text-transform: uppercase;
   background-color: #1414ee;
   color: #f2f6f8;
   opacity: .65;
   cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+.btn:hover{
+  background-color: #03a9f4;
 
 }
 
