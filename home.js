@@ -34,34 +34,19 @@ if (urlParams.has("message") && urlParams.get("message") === "success") {
   }, 2000);
 }
 
-// window.addEventListener("DOMContentLoaded", function () {
-//   var usernameDisplay = document.getElementById("usernameDisplay");
-//   var urlParams = new URLSearchParams(window.location.search);
-//   var storedUsername = urlParams.get("username");
-
-//   if (storedUsername) {
-//     // Decode the username to display it properly
-//     var decodedUsername = decodeURIComponent(storedUsername);
-//     usernameDisplay.textContent = decodedUsername;
-//   } else {
-//     usernameDisplay.textContent = "No username found.";
-//   }
-// });
-
-window.onload = function () {
-  // Get the username parameter from the URL
+window.addEventListener("DOMContentLoaded", function () {
+  var usernameDisplay = document.getElementById("usernameDisplay");
   var urlParams = new URLSearchParams(window.location.search);
-  var username = urlParams.get('username');
+  var storedUsername = urlParams.get("username");
 
-  // Display the username on the page
-  var usernameDisplay = document.getElementById('usernameDisplay');
-  if (username) {
-    usernameDisplay.textContent = "Welcome, " + decodeURIComponent(username);
-  }
-  else {
+  if (storedUsername) {
+    // Decode the username to display it properly
+    var decodedUsername = decodeURIComponent(storedUsername);
+    usernameDisplay.textContent = decodedUsername;
+  } else {
     usernameDisplay.textContent = "No username found.";
   }
-}
+});
 
 
 

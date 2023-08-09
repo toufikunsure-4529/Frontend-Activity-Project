@@ -15,6 +15,7 @@ function login() {
   }
   else {
     errorElement.textContent = "Incorrect password. Please try again.";
+
     return false; // Prevent form submission
   }
 }
@@ -68,6 +69,6 @@ function copyUsername() {
   var encodedUsername = encodeURIComponent(username);
 
   // Redirect to the next page with the username as a parameter
-  window.location.href = "next-page.html?username=" + encodedUsername;
+  window.location.href = "home.html?username=" + encodedUsername;
 }
 

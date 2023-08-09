@@ -1,7 +1,7 @@
 const name = document.getElementById('name')
 const usernameInput = document.getElementById("usernameInput")
 const submitButton = document.getElementById('submitButton');
-const pw = "Password@123"
+const pw = "Password@1234"
 submitButton.addEventListener("click", showMsg) // button click Event listeaner
 
 // //show alert function
