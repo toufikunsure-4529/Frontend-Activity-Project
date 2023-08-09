@@ -127,5 +127,10 @@ a:hover{
   color: pink;
 }
 
+.icon{
+  font-size: 30px;
+  cursor: pointer;
+}
+
 
 

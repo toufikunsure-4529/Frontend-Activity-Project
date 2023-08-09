@@ -1,121 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attendance &mdash; Clockify</title>
-  <link rel="stylesheet" href="/css/home.css">
-  <link rel="stylesheet" href="/css/team.css">
-  <link rel="stylesheet" href="/css/dash.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance &mdash; Clockify</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/team.css">
+    <link rel="stylesheet" href="/css/dash.css">
 
-  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 
-  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-  <header class="header">
-    <nav class="nav">
-    <div class="nav-section">
-      <div>
-        <ion-icon class="menu-icon" name="menu-outline"></ion-icon> 
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div>
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </div>
+        <div>
+          <img src="https://app.clockify.me/assets/logo.svg"
+            alt="Clockify Image">
+        </div>
+
+        <div>
+          <button class="btn-upgrade">Upgrade</button>
+        </div>
+
+        <div>
+          <ion-icon class="icon" name="help-circle-outline"></ion-icon>
+        </div>
+
+        <div>
+          <ion-icon class="icon" name="notifications-outline"></ion-icon>
+        </div>
+
+        <div>
+          <img
+            src="https://omnifood-toufik.netlify.app/img/customers/customer-4.jpg"
+            alt="User Profile Photo" class="profile-img">
+        </div>
       </div>
-
-      <div>
-        <img src="https://app.clockify.me/assets/logo.svg" alt="Clockify Image">
-      </div>
-      <div class="nav-detail">
-
-      <div>
-        <p class="user-name">Welcome</p>
-      </div>
-
-      <div>
-        <button class="btn-upgrade">Upgrade</button>
-      </div>
-
-      <div>
-        <ion-icon class="circle-question-icon" name="help-circle-outline"></ion-icon>
-      </div>
-
-      <div>
-            <ion-icon class="notification-icon" name="notifications-outline"></ion-icon>
-      </div>
-
-      <div>
-      <img src="https://omnifood-toufik.netlify.app/img/customers/customer-4.jpg" alt="User Profile Photo" class="profile-img">
-      </div>
-    </div>
-    <div>
     </nav>
 
   </header>
 
   <main>
     <div class="menu-section">
-    <section class="section-menu">
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="aperture-outline"></ion-icon><span>Attendance</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="calendar-outline"></ion-icon><span>TimeSheet</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="time-outline"></ion-icon> <span>Time Tracker</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"> <ion-icon class="icon-menu-section" name="calendar-clear-outline"></ion-icon><span>Calendar</span></a></div>
-      <div class="menu"><a class="main-menu" href="/dash.html"><ion-icon class="icon-menu-section" name="grid-outline"></ion-icon><span>Dashboard</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="stats-chart-outline"></ion-icon><span>Reports</span></a></div>
-      <div class="menu"><a class="main-menu" href="/team.html"><ion-icon class="icon-menu-section" name="people-circle-outline"></ion-icon><span>Team</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="person-circle-outline"></ion-icon><span>Clients</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="document-text-outline"></ion-icon><span>Projects</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="git-branch-outline"></ion-icon><span>Schedule</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="analytics-outline"></ion-icon><span>Activity</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="calendar-outline"></ion-icon><span>Approvel</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="document-outline"></ion-icon><span>Invoice</span></a></div>
-      <div class="menu"><a class="main-menu" href="#"><ion-icon class="icon-menu-section" name="settings-outline"></ion-icon><span>Settings</span></a></div>
-      <div class="menu"><a class="main-menu" href="/index.html"><ion-icon class="icon-menu-section" name="log-out-outline"></ion-icon><span>Logout</span></a></div>
-      
-    </section>
+      <section class="section-menu">
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="aperture-outline"></ion-icon><span>Attendance</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"> <ion-icon
+              class="icon-menu-section" name="calendar-outline"></ion-icon><span>TimeSheet</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"> <ion-icon
+              class="icon-menu-section" name="time-outline"></ion-icon> <span>Time
+              Tracker</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"> <ion-icon
+              class="icon-menu-section" name="calendar-clear-outline"></ion-icon><span>Calendar</span></a></div>
+        <div class="menu"><a class="main-menu" href="/dash.html"><ion-icon
+              class="icon-menu-section" name="grid-outline"></ion-icon><span>Dashboard</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="stats-chart-outline"></ion-icon><span>Reports</span></a></div>
+        <div class="menu"><a class="main-menu" href="/team.html"><ion-icon
+              class="icon-menu-section" name="people-circle-outline"></ion-icon><span>Team</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="person-circle-outline"></ion-icon><span>Clients</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="document-text-outline"></ion-icon><span>Projects</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="git-branch-outline"></ion-icon><span>Schedule</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="analytics-outline"></ion-icon><span>Activity</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="calendar-outline"></ion-icon><span>Approvel</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="document-outline"></ion-icon><span>Invoice</span></a></div>
+        <div class="menu"><a class="main-menu" href="#"><ion-icon
+              class="icon-menu-section" name="settings-outline"></ion-icon><span>Settings</span></a></div>
+        <div class="menu"><a class="main-menu" href="/index.html"><ion-icon
+              class="icon-menu-section" name="log-out-outline"></ion-icon><span>Logout</span></a></div>
 
-    <section  class="section-pricing ss" id="pricing">
-      <!-- <p id="wish-time"></p> -->
-      <!-- <p id="usernameDisplay"></p> -->
-      <!-- <pre id="successMessage"></pre> -->
+      </section>
+
+      <section class="section-pricing ss" id="pricing">
+        <!-- <p id="wish-time"></p> -->
+        <!-- <p id="usernameDisplay"></p> -->
+        <!-- <pre id="successMessage"></pre> -->
 
         <form name="addTeamMember" netlify>
-    
-        <div class="container1">
-          <div class="pricing-plan pricing-plan--starter">
-            <div class="display-signup">
-    
-            <p class="plan-name">Add Team Member</p>
-          </div>
-    
-            <div class="input-box">
-              <label for="name"></label>
-              <input id="name" type="text" placeholder="Enter Name" name="name" required="" class="input">
-            </div>
-            <div class="input-box">
-              <label for="mobile-no"></label>
-              <input id="mobile-no" type="number" placeholder="Enter Phone No" name="mobile" required="" class="input">
-            </div>
-       
+
+          <div class="container1">
+            <div class="pricing-plan pricing-plan--starter">
+              <div class="display-signup">
+
+                <p class="plan-name">Add Team Member</p>
+              </div>
+
+              <div class="input-box">
+                <label for="name"></label>
+                <input id="name" type="text" placeholder="Enter Name"
+                  name="name" required class="input">
+              </div>
+              <div class="input-box">
+                <label for="mobile-no"></label>
+                <input id="mobile-no" type="number" placeholder="Enter Phone No"
+                  name="mobile" required class="input">
+              </div>
+
               <div class="input-box">
                 <label for="email"></label>
-                <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
-              </div>  
+                <input id="usernameInput" type="email" placeholder="Enter email"
+                  name="email" required class="input">
+              </div>
               <div class="input-box">
                 <label for="myFile" class="img-upload">Upload Image</label>
-                <input  type="file"  name="filename" required="" class="myFile" accept="image/png, image/jpeg" onchange="loadFile(event)">
-                <img id="output" width="200" />	
-              </div>  
-            <button type="submit" class="btn">Add Team Member</button>
+                <input type="file" name="filename" required class="myFile"
+                  accept="image/png, image/jpeg" onchange="loadFile(event)">
+                <img id="output" width="200" />
+              </div>
+              <button type="submit" class="btn">Add Team Member</button>
+            </div>
           </div>
-          </div>
-        </form> 
+        </form>
       </section>
-    
-<section>
-    
-</section>
-  
-  </main>
-  <script src="team.js"></script>
- 
+
+      <section>
+
+      </section>
+
+    </main>
+    <script src="team.js"></script>
+
   </body>
 </html>
