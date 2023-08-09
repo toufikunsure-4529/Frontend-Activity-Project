@@ -15,7 +15,6 @@ function login() {
   }
   else {
     errorElement.textContent = "Incorrect password. Please try again.";
-
     return false; // Prevent form submission
   }
 }
