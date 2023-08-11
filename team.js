@@ -1,6 +1,6 @@
-var loadFile = function(event) {
+var loadFile = function (event) {
   var reader = new FileReader();
-  reader.onload = function(){
+  reader.onload = function () {
     var output = document.getElementById('output');
     output.src = reader.result;
   };
@@ -9,11 +9,12 @@ var loadFile = function(event) {
 
 var uploadField = document.getElementById("myFile");
 
-uploadField.onchange = function() {
-if(this.files[0].size > 300000){
-   alert("File is too big Please Upload lesthan 300kb!");
-   this.value = "";
+uploadField.onchange = function () {
+  if (this.files[0].size > 300000) {
+    alert("File is too big Please Upload lesthan 300kb!");
+    this.value = "";
+  };
 };
-};
+
 
 
