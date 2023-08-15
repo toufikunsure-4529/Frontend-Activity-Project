@@ -1,7 +1,7 @@
+// login paassword validation function
 var pww = document.getElementById("pw");
 let num = new Date()
 pww.textContent = num;
-
 function login() {
   var errorElement = document.getElementById("error");
   var password = document.getElementById("password").value;
@@ -10,16 +10,17 @@ function login() {
     // window.location.href = "home.html";
     var url = "home.html?message=success";
     window.location.href = url;
-
     return false;
   }
   else {
     errorElement.textContent = "Incorrect password. Please try again.";
-
     return false; // Prevent form submission
   }
 }
 
+
+
+// wish day function
 let day = new Date();
 let hr = day.getHours();
 if (hr >= 0 && hr < 12) {
@@ -27,20 +28,20 @@ if (hr >= 0 && hr < 12) {
 }
 else if (hr == 12) {
   document.getElementById('wish-time').innerHTML = "Good Noon!";
-
 }
 else if (hr >= 12 && hr <= 17) {
   document.getElementById('wish-time').innerHTML = "Good Afternoon!";
-
 }
 else {
   document.getElementById('wish-time').innerHTML = "Good Evening!";
 
 }
 
+
+
+// live ip adress capture function
 document.addEventListener("DOMContentLoaded", function () {
   var currentIPEl = document.getElementById("currentIP");
-
   // Make an HTTP request to the ipify API
   var request = new XMLHttpRequest();
   request.open("GET", "https://api.ipify.org?format=json", true);
@@ -60,15 +61,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+/* cursol animation after page loaded */
+document.addEventListener("DOMContentLoaded",function(){
+  const loadingAnimation=document.getElementById("loading-animation")
+  const contentPlaceholder=document.getElementById("content-placeholder")
 
-function copyUsername() {
-  var usernameInput = document.getElementById("usernameInput");
-  var username = usernameInput.value;
+      // Simulate a delay for demonstration purposes
+  setTimeout(function(){
+    loadingAnimation.style.display="none"
+    contentPlaceholder.style.display="block"
+    function loadContent(){
+      const newElement=document.createElement("p")
+      contentPlaceholder.appendChild(newElement)
+    }
+            // Call the loadContent function to load dynamic content
+    loadContent();
+  },2000) // Simulating a 2-second delay, adjust as needed
+})
 
-  // Encode the username to handle special characters in the URL
-  var encodedUsername = encodeURIComponent(username);
 
-  // Redirect to the next page with the username as a parameter
-  window.location.href = "home.html?username=" + encodedUsername;
-}
 

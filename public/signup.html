@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Clickfy</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/css/login.css">   <!--This is a main css export login index page -->
+  <link rel="stylesheet" href="/css/signup.css">   <!--secondory change css This page --main export login index page -->
+
+</head>
+<body>
+  <div id="loading-animation">
+    <!-- Loading animation here (e.g., spinner) -->
+    <div class="spinner"></div>
+    <p>This may take couple of mins.....</p>
+</div>
+<div id="content-placeholder" style="display: none;">
+    <!-- Content will be loaded here -->
+
+ <!-- Nav section -->
+  <header class="header">
+    <h1 class="logo-txt"><span>C</span>lick<span>f</span>y</h1>
+       <a class='signupButton' href='/public/index.html'>Login</a>
+    </header>
+
+    <main>
+        <p id="wish-time"></p>
+        <p class="get-started">Get started with Clockify</p>
+        <p class="unsubscribe-text">No credit card required · Unsubscribe at any time</p>
+
+        <!-- logib box form -->
+      <section class="login-section" id="pricing">
+        <form id="loginForm" onsubmit ="return login()">
+        <div class="container">
+          <div class="form-input">
+            <p class="login-text" style="font-size: 23px;font-weight:500;">Sign up</p>
+            <p id="error" class="error-msg"></p>
+            <div class="input-box">
+              <label for="name"></label>
+              <input id="name" type="text" placeholder="Enter Your Full Name" name="name" required="" class="input">
+            </div>
+            <div class="input-box">
+              <label for="mobile"></label>
+              <input id="mobile" type="number" placeholder="Enter 10 Digit Mobile Number" name="mobile" required="" class="input">
+              </div>
+            <div class="input-box">
+              <label for="email"></label>
+              <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
+            </div>
+            <div class="input-box">
+              <label for="password"></label>
+              <input id="password" type="password" placeholder="Choose Password" name="password" required="" class="input">
+              </div>
+              <div class="stay-login">
+                <input type="checkbox" id="checkbox" class="larger" name="checkBox2" required>
+                <div class="stay">
+                <label for="checkbox" class="label-stay-log">I agree to Clockify</label>              
+                <div class="forgot-password"><a href="#"><span class="forgot-password">Terms of Use</span></a></div>
+            
+              </div>
+              
+            </div>
+            <button type="submit" class="btn">Create Free Account</button>
+            <hr>
+            <div class="google-login" style="background: #E4EAEE;">
+              <a href="#" style="pointer-events: none;"><img src="/img/google.svg" alt="google-icon" srcset=""></a>
+              <a href="#" class="google-log" style="pointer-events: none;"><span class="google-log-txt"> Continue with Google </span></a>
+            </div>
+            <p id="currentIP"></p>
+            <p id="pw" style="font-size: 14px;"></p>
+
+          </div>
+          </div>
+        </form>
+        
+
+    </main>
+    
+    <footer>
+      <div class="footer-bar">
+        Copyright © || Clickfy Designed and developed by <a href="#">Toufik</a>
+      </div>    </footer>
+    </div>
+    <script src="/src/index.js"></script>
+    
+</body>
+</html>
