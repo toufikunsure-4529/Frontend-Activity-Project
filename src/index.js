@@ -1,7 +1,9 @@
-// login paassword validation function
+// live date capture
 var pww = document.getElementById("pw");
 let num = new Date()
 pww.textContent = num;
+
+// login paassword validation function
 function login() {
   var errorElement = document.getElementById("error");
   var password = document.getElementById("password").value;
