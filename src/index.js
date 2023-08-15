@@ -10,7 +10,7 @@ function login() {
   var correctPassword = "Password@1234";
   if (password === correctPassword) {
     // window.location.href = "home.html";
-    var url = "home.html?message=success";
+    var url = "/public/home.html?message=success";
     window.location.href = url;
     return false;
   }
