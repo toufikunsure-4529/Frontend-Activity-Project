@@ -10,25 +10,78 @@ body{
   background-color: aliceblue;
   
 }
-nav{
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-nav a{
-  color: aliceblue !important;
-}
-nav input::placeholder{
-  font-size: 10px;
+
+html{
+  font-size: 62.5%;
 }
 
+/* ********************************* */
+/* HEADER */
+/* ********************************* */
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12191D;
+  color: #fff;
+  height: 6.2rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.logo{
+  height: 2.2rem;
+}
 
-.profile-img{
+/* ********************************* */
+/* NAVIGATION */
+/* ********************************* */
+
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active{
+  color: #cf711f;
+}
+.user-img{
   height: 3.2rem;
+  width: 3.2rem;
   border-radius: 50%;
   cursor: pointer;
 }
+/* MOBILE */
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+}
+
+.icon-mobile-nav{
+  height: 4.8rem;
+  width: 4.8rem;
+  color: aliceblue;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+/* SIDE MENU SECTION */
 
 .menu-section{
   display: grid;
@@ -42,8 +95,8 @@ nav input::placeholder{
 
 .ss{
  
-  background-color: #263238;
-  color: #fff;
+  background-color: RED;
+  color: #263238;
   text-align: center;
 }
 
