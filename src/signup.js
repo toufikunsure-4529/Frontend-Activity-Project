@@ -72,6 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//Signup Data Store Google sheet App Script
+const scriptURL = 'https://script.google.com/macros/s/AKfycby4iWxwWTU3jDo6AuXi19ZwQvFWUpQ5VmwiiOOn-7k-Sva-fAbru818U7YFA1SREdz4cA/exec'
+const form = document.forms['signupdata']
+const name = document.getElementById('name')
+
+form.addEventListener('submit', e => {
+  const userName = name.value;
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert(`Thank you! ${userName} Your Default Password: Password@1234.` ))
+  .then(() => {  window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+
+
 
 
 
