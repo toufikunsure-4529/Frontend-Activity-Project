@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Maintenance</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #maintenanceMessage {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+      color: red;
+      margin-top: 100px;
+    }
+  </style>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var now = new Date();
+      var scheduledTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0); // Set the scheduled time to 2:00 PM
+
+      if (now >= scheduledTime) {
+        document.getElementById("maintenanceMessage").style.display = "block";
+        document.getElementById("mainContent").style.display = "none";
+      } else {
+        document.getElementById("maintenanceMessage").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="maintenanceMessage">Page Not Available at the moment due to maintenance.</div>
+  <div id="mainContent">
+<h1>
+  Hello
+</h1>  </div>
+</body>
+</html>
