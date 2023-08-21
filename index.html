@@ -1,77 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clickfy | Login &mdash; Attendance</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="/css/login.css">
+  <title>Page Maintenance</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #maintenanceMessage {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+      color: red;
+      margin-top: 100px;
+    }
+  </style>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var now = new Date();
+      var scheduledTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0); // Set the scheduled time to 2:00 PM
+
+      if (now >= scheduledTime) {
+        document.getElementById("maintenanceMessage").style.display = "block";
+        document.getElementById("mainContent").style.display = "none";
+      } else {
+        document.getElementById("maintenanceMessage").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+      }
+    });
+  </script>
 </head>
 <body>
-  <div id="loading-animation">
-    <!-- Loading animation here (e.g., spinner) -->
-    <div class="spinner"></div>
-    <p>This may take couple of mins.....</p>
-</div>
-<div id="content-placeholder" style="display: none;">
-    <!-- Content will be loaded here -->
-
- <!-- Nav section -->
-  <header class="header">
-    <h1 class="logo-txt"><span>C</span>lick<span>f</span>y</h1>
-        <p class="header-text">Don't have an account? <a class='signupButton' href='/public/signup.html'>Sign up</a></p>
-    </header>
-
-    <main>
-        <p id="wish-time"></p>
-
-        <!-- logib box form -->
-      <section class="login-section" id="pricing">
-        <form id="loginForm" onsubmit ="return login()">
-        <div class="container">
-          <div class="form-input">
-            <p class="login-text" style="font-size: 23px;font-weight:500;">Log in</p>
-            <p id="error" class="error-msg"></p>
-            <div class="input-box">
-              <label for="email"></label>
-              <input id="usernameInput" type="email" placeholder="Enter email" name="email" required="" class="input">
-            </div>
-            <div class="input-box">
-              <label for="password"></label>
-              <input id="password" type="password" placeholder="Enter password" name="password" required="" class="input">
-              </div>
-              <div class="stay-login">
-                <input type="checkbox" id="checkbox" class="larger" name="checkBox2" checked>
-                <div class="stay">
-                <label for="checkbox" class="label-stay-log">Stay logged in</label>              
-                <div class="forgot-password"><a href="#"><span class="forgot-password">Forgot password?</span></a></div>
-              
-              </div>
-              
-            </div>
-            <button type="submit" class="btn">Log in</button>
-            <hr>
-            <div class="google-login">
-              <a href="#"><img src="/img/google.svg" alt="google-icon" srcset=""></a>
-              <a href="#" class="google-log"><span class="google-log-txt"> Continue with Google </span></a>
-            </div>
-            <p id="currentIP"></p>
-            <p id="pw" style="font-size: 14px;"></p>
-            <p id="usernameDisplay"></p>
-          </div>
-          </div>
-        </form>
-        
-
-    </main>
-    
-    <footer>
-      <div class="footer-bar">
-        Copyright © || Clickfy Designed and developed by <a href="#">Toufik</a>
-      </div>    </footer>
-    </div>
-    <script src="/src/index.js"></script>
-    
+  <div id="maintenanceMessage">Page Not Available at the moment due to maintenance.</div>
+  <div id="mainContent">
+<h1>
+  Hello
+</h1>  </div>
 </body>
 </html>

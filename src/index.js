@@ -81,5 +81,3 @@ document.addEventListener("DOMContentLoaded",function(){
   },2000) // Simulating a 2-second delay, adjust as needed
 })
 
-
-

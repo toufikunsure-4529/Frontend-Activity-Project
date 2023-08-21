@@ -279,5 +279,18 @@ button{
   }
 }
 
+.get-started,.unsubscribe-text{
+  text-align: center;
+  margin-top: 8px;
+}
+
+.get-started{
+  font-size: 20px;
+}
+
+.unsubscribe-text{
+  opacity: 50%;
+}
+
 
 
