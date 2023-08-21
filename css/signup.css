@@ -45,7 +45,7 @@ body{
   display: none;
 }
 #loading-animation p{
-  font-size: 14px;
+  font-size: 14px; 
   color: green;
 }
 
