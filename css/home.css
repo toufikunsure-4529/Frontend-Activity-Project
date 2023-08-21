@@ -94,8 +94,7 @@ html{
 }
 
 .ss{
- 
-  background-color: RED;
+  background-color: aliceblue;
   color: #263238;
   text-align: center;
 }
@@ -140,7 +139,7 @@ html{
   font-family: sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  color: #fff;
+  color: #12191D;
   margin-top: 0.8rem;
 }
 
@@ -168,7 +167,7 @@ html{
 #usernameDisplay{
   font-size: 14px;
   margin-top: 10px;
-  color: pink;
+  color: #12191D;
 }
 
 .icon{
