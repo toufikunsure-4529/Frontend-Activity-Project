@@ -81,3 +81,26 @@ document.addEventListener("DOMContentLoaded",function(){
   },2000) // Simulating a 2-second delay, adjust as needed
 })
 
+// ====Error Showing Web page {Error Handelling} Call back=====
+function scriptLoaded(src,callback){
+let script=document.createElement("script")
+script.src=src;
+script.onload=(()=>{
+  // console.log("Script Loaded!");
+  callback(null,src);
+});
+script.onerror=(()=>{
+  callback(new Error("404 Gateway Page Not Found"))
+})
+document.body.append(script)
+}
+
+function callback(error){
+  if(error){
+    location.pathname="/public/maintenance.html"
+    return;
+  }
+  console.log("Script Loaded")
+}
+
+scriptLoaded("https://cdn.jsdelivr1.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js",callback)

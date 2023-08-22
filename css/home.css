@@ -56,7 +56,7 @@ html{
 .main-nav-link:active{
   color: #cf711f;
 }
-.user-img{
+.nav-item img{
   height: 3.2rem;
   width: 3.2rem;
   border-radius: 50%;
