@@ -81,7 +81,7 @@ form.addEventListener('submit', e => {
   const userName = name.value;
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert(`Thank you! ${userName} Your Default Password: Password@1234.` ))
+  .then(response => alert(`Thank you! ${userName} Your Password: Password@1234.` ))
   .then(() => {  window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
 })

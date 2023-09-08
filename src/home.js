@@ -34,33 +34,6 @@ if (urlParams.has("message") && urlParams.get("message") === "success") {
   }, 2000);
 }
 
-window.addEventListener("DOMContentLoaded", function () {
-  var usernameDisplay = document.getElementById("usernameDisplay");
-  var urlParams = new URLSearchParams(window.location.search);
-  var storedUsername = urlParams.get("username");
-
-  if (storedUsername) {
-    // Decode the username to display it properly
-    var decodedUsername = decodeURIComponent(storedUsername);
-    usernameDisplay.textContent = decodedUsername;
-  } else {
-    usernameDisplay.textContent = "No username found.";
-  }
-});
-
-
-//Nav Notification js Toasts
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
-
-
 
 
 
