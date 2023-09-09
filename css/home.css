@@ -49,9 +49,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: darkcyan;
-  /* background-color: #263238; */
-  /* Because we want heade to be sticky later */
+  background-color: #343A40;
   height: 5.6rem;
   padding: 0 1rem;
   position: relative;
@@ -69,27 +67,42 @@ html{
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2.8rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited{
   display: inline-block;
   text-decoration: none;
-  color: #12191D;
-  font-size: 1.8rem;
+  color: #5BC7F8;
+  font-size: 1.3rem;
   transition: all 0.3s;
 }
 
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited{
+  font-size: 1.2rem;
   padding: 0.6rem 2.4rem;
-  border-radius: 9px;
+  border-radius: 6px;
   color: #e67e22;
   border: 1px solid #eeb582;
 }
 
+.main-nav-link.nav-cta:link:hover{
+  background-color: aliceblue;
+  border: 1px solid #FAFCFF;
+}
+.main-nav-link.nav-cta.logout{
+  display: none;
+}
+
+.user-img{
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 
 /* MOBILE VIEW*/
@@ -112,22 +125,8 @@ html{
         display: none;
       }
 
-      /* Stocky navigation */
-      .sticky .header{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 8rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        background-color: rgba(255,255,255,0.97);
-        z-index: 999;
-        box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
-      }
-    .sticky .section-hero{
-        margin-top: 9.6rem;
-      }
+
+   
 
 
       @media(max-width:1000px){
@@ -140,7 +139,6 @@ html{
   .main-nav{
     background-color: rgba(255,255,255,0.9);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     position: absolute;
     top: 70px;
     right: 10px;
@@ -184,8 +182,17 @@ html{
 
   .main-nav-list{
     flex-direction: column;
-    gap: 4.8rem;
+    gap: 1.8rem;
   }
+  .main-nav-link:link,
+.main-nav-link:visited{
+  color: black;
+
+}
+.main-nav-link.nav-cta.logout{
+  display: block;
+}
+
 }
 
 .main-nav-link:link,
@@ -209,13 +216,16 @@ html{
   color: #263238;
   text-align: center;
 }
+.note{
+  display: none;
+}
 
 
 /* SIDE MENU SECTION */
 
 
 .section-menu{
-  background-color: darkcyan ;
+  background-color: #343A40 ;
   padding-top: 1.6rem;
 }
 
@@ -251,4 +261,20 @@ html{
   width: 1.8rem;
   display: flex;
   margin-right: 0.6rem;
+}
+
+
+@media(max-width:600px){
+  .section-menu{
+    display: none;
+  }
+  .main-conatiner{
+    grid-template-columns: 1fr;
+  }
+  .note{
+    display: block;
+    color: red;
+    text-align: center;
+  }
+
 }
