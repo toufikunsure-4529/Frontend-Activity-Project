@@ -28,12 +28,13 @@ html{
 
 #successMessage{
   color: #fff;
-  background-color: green;
+  background-color: rgb(127, 224, 127);
   display: inline-block;
   padding: 1rem 0;
   border-radius: 5px;
   font-size: 1.2rem;
   position: absolute;
+  bottom: 0;
   right: 2rem;
   text-align: left;
   transition: all 5s ease;
@@ -275,12 +276,8 @@ html{
     display: block;
     color: red;
     text-align: center;
+    padding: 16px;
   }
-  .ss{
-    background-image: url("https://source.unsplash.com/1100x900/?nature");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
 
 }
