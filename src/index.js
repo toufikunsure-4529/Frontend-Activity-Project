@@ -10,14 +10,22 @@ function login() {
   var correctPassword = "Password@1234";
   if (password === correctPassword) {
     // window.location.href = "home.html";
-    var url = "/public/home.html?message=success";
-    window.location.href = url;
+    setTimeout(()=>{
+      var url = "/public/home.html?message=success";
+      window.location.href = url;
+
+    },2000)
+    let btn = document.getElementById('btn');
+    btn.disabled = true;
+    btn.innerText = 'Posting...'
+
     return false;
   }
   else {
     errorElement.textContent = "Incorrect password. Please try again.";
     return false; // Prevent form submission
   }
+  
 }
 
 

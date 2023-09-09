@@ -177,6 +177,7 @@ button:active{
   padding: 8.512px 10.500px;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 .google-login a img{
   height: 25px;
@@ -189,7 +190,7 @@ button:active{
 .google-log-txt{
   font-size: 20px;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 10px;
 }
 .error-msg{
   color: #ff0000;

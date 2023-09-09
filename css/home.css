@@ -138,7 +138,6 @@ html{
 
   .main-nav{
     background-color: rgba(255,255,255,0.9);
-    -webkit-backdrop-filter: blur(5px);
     position: absolute;
     top: 70px;
     right: 10px;

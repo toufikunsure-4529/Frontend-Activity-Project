@@ -84,7 +84,12 @@ form.addEventListener('submit', e => {
   .then(response => alert(`Thank you! ${userName} Your Password: Password@1234.` ))
   .then(() => {  window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
+  let btn = document.getElementById('btn');
+  btn.disabled = true;
+  btn.innerText = 'Posting...'
 })
+
+
 
 
 
