@@ -17,22 +17,26 @@ else {
 }
 
 
-// Get the URL parameters
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString, window.location.search);
-var errorElement = document.getElementById("successMessage");
-
-// Check if the "message" parameter is present and has a value of "success"
-if (urlParams.has("message") && urlParams.get("message") === "success") {
-  // Display success message
-  var errorElement = document.getElementById("successMessage");
-  errorElement.textContent = " Logged succesfully ";
-
-
+// Check for the message query parameter in the URL
+var urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has("message")) {
+  var message = urlParams.get("message");
+  if (message === "success") {
+    // Display the success message (you can modify this part)
+    var successMessageElement = document.getElementById("successMessage");
+    successMessageElement.textContent = " Login successful! ";
+    
+    // Remove the message query parameter from the URL
+    history.replaceState({}, document.title, "/public/home.html");
+  }
   setTimeout(function () {
-    errorElement.textContent = "";
+    successMessageElement.textContent = "";
   }, 2000);
 }
+
+
+
+
 
 
 // Make mobile navigation work
@@ -42,4 +46,6 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+
 
