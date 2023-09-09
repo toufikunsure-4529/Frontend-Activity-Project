@@ -276,5 +276,11 @@ html{
     color: red;
     text-align: center;
   }
+  .ss{
+    background-image: url("https://source.unsplash.com/1100x900/?nature");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 }
