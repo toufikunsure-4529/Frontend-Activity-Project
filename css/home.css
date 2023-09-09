@@ -28,13 +28,12 @@ html{
 
 #successMessage{
   color: #fff;
-  background-color: rgb(127, 224, 127);
+  background-color: green;
   display: inline-block;
   padding: 1rem 0;
   border-radius: 5px;
   font-size: 1.2rem;
   position: absolute;
-  bottom: 0;
   right: 2rem;
   text-align: left;
   transition: all 5s ease;
@@ -278,6 +277,11 @@ html{
     text-align: center;
     padding: 16px;
   }
+
+ 
+#successMessage{
+  bottom: 0;
+}
 
 
 }
