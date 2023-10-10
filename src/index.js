@@ -118,3 +118,23 @@ function callback(error){
 
 
 // scriptLoaded("https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js",callback)
+
+
+
+// password.addEventListener("keyup", function(event) {
+
+//   if (event.getModifierState("CapsLock")) {
+//       text.style.display = "block";
+//     } else {
+//       text.style.display = "none"
+//     }
+//   });
+
+
+function myFunction() {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
